@@ -12,19 +12,35 @@ export default function Navbar() {
         MyShop
       </Link>
 
-      <div className="flex gap-6">
-        <Link href="/" className="hover:text-gray-200">Home</Link>
-        <Link href="/products" className="hover:text-gray-200">Products</Link>
+      <div className="flex gap-6 items-center">
+        <Link href="/" className="hover:text-gray-200">
+          Home
+        </Link>
+        <Link href="/products" className="hover:text-gray-200">
+          Products
+        </Link>
 
         {!session ? (
-          <div className="flex gap-4">
-            <Link href="/login" className="hover:text-gray-200">Login</Link>
-            <Link href="/register" className="hover:text-gray-200">Register</Link>
-          </div>
+          <>
+            <Link href="/login" className="hover:text-gray-200">
+              Login
+            </Link>
+            <Link href="/register" className="hover:text-gray-200">
+              Register
+            </Link>
+          </>
         ) : (
-          <button onClick={() => signOut()} className="hover:text-gray-200">
-            Logout
-          </button>
+          <>
+            <Link href="/dashboard/add-product" className="hover:text-gray-200">
+              Add Product
+            </Link>
+            <button
+              onClick={() => signOut()}
+              className="hover:text-gray-200"
+            >
+              Logout
+            </button>
+          </>
         )}
       </div>
     </nav>

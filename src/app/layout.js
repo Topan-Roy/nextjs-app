@@ -6,6 +6,7 @@ import "./globals.css";
 import AuthProvider from "./providers/AuthProvider";
 
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -29,7 +30,7 @@ export default function RootLayout({ children }) {
       >
   
        <AuthProvider>
-        
+    
         <main className="min-h-screen">
           {children}
         </main>
