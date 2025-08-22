@@ -25,10 +25,10 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex text-black items-center justify-center min-h-screen bg-gray-100">
       <form
         onSubmit={handleLogin}
-        className="bg-black p-6 rounded-lg shadow-md w-80"
+        className="bg-white p-6 rounded-lg shadow-md w-80"
       >
         <h1 className="text-xl font-bold mb-4">Login</h1>
         <input
