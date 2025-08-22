@@ -18,7 +18,7 @@ export default function LoginPage() {
     });
 
     if (!res.error) {
-      router.push("/products");
+      router.push("/");
     } else {
       alert("Invalid credentials!");
     }

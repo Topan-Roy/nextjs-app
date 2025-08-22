@@ -17,7 +17,10 @@ export default function Navbar() {
         <Link href="/products" className="hover:text-gray-200">Products</Link>
 
         {!session ? (
-          <Link href="/login" className="hover:text-gray-200">Login</Link>
+          <div className="flex gap-4">
+            <Link href="/login" className="hover:text-gray-200">Login</Link>
+            <Link href="/register" className="hover:text-gray-200">Register</Link>
+          </div>
         ) : (
           <button onClick={() => signOut()} className="hover:text-gray-200">
             Logout
