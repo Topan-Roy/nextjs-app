@@ -17,12 +17,8 @@ export default function Hero() {
           >
             View Products
           </Link>
-          {/* <Link
-            href="/login"
-            className="bg-gray-200 text-gray-800 px-6 py-3 rounded-md hover:bg-gray-300"
-          >
-            Login
-          </Link> */}
+          
+
         </div>
       </div>
     </section>
