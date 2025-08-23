@@ -18,7 +18,7 @@ export default function RegisterPage() {
 
     if (res.ok) {
       alert("Registration Successful!");
-      router.push("/"); // ✅ register হলে home এ redirect
+      router.push("/"); 
     } else {
       alert("Registration Failed!");
     }
