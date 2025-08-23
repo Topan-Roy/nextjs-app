@@ -48,9 +48,11 @@ export default function Footer() {
           </div>
         </div>
 
+
+
       </div>
 
-      {/* Bottom Bar */}
+     
       <div className="border-t border-gray-700 py-4 text-center text-sm text-gray-400">
         © {new Date().getFullYear()} MyShop. All rights reserved.
       </div>
